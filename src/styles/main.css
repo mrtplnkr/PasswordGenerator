@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.topMenu {
+    background: black;
+    margin: 0;
+}
+
+.text-sm {
+    font-size: 0.5em;
+}
+
+menu.topMenu {
+    background: black;
+    display: flex;
+    height: 2em;
+    padding: 1em 5em;
+}
+
+.readersParagraph {
+    color: #9E9FA4;
+    font-size: 0.8em;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.m-1 {
+    margin: 1em;
+}
+
+.generatorContainer {
+    background: black;
+    color: white;
+    margin: 1em 5em;
+    padding: 2em;
+}
+
+.overlap {
+    position: absolute;
+    height: 3.5em;
+    right: 0.5em;
+    color: red;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.relativeContainer {
+    position: relative;
+}
+
+.mr-5 {
+    margin-right: 5em;
+}
+.ml-5 {
+    margin-left: 5em;
+}
+
+#passwordInput {
+    padding: 1em 3em 1em 1em;
+    font-weight: bold;
+}
+
+.checkboxContainer {
+    margin: 0.5em;
+}
+.checkboxContainer input {
+    height: 0.7em;
+}
+.checkboxContainer label {
+    cursor: pointer;
+}
+
+.copyButton {
+    background-color: #09A858;
+    border: 1px solid #09A858;
+    color: #fff;
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+figure {
+    display:flex; flex-direction: column; margin: 2em 10em 2em 10em;
+}
+
+figure .flexRow {
+    display: flex; flex-direction: row;
+}
+
+.img-xl {
+    height: 10em
+}
+
+@media screen and (max-width: 600px) {
+    figure {
+        display:flex; flex-direction: column; margin: 2em;
+    }
+    
+    figure .flexRow {
+        display: flex; flex-direction: column; text-align: center;
+    }
+
+    .flexRow:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .copyButton {
+        margin-top: 1em;
+    }
+
+    .checkboxContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #passwordInput {
+        width: 50%;
+    }
+
+    .generatorContainer {
+        margin: 1em;
+    }
+}
