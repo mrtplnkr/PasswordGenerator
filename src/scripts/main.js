@@ -6,8 +6,12 @@ function handleFormSubmit(event) {
 }
 
 function refreshPassword() {
-  const charOptions = buildCharacterSet(document.getElementById('chkUpper').checked, 
-    document.getElementById('chkLower').checked, document.getElementById('chkNumbers').checked, document.getElementById('chkSymbols').checked);
+  const charOptions = buildCharacterSet(
+    document.getElementById('chkUpper').checked,
+    document.getElementById('chkLower').checked,
+    document.getElementById('chkNumbers').checked,
+    document.getElementById('chkSymbols').checked
+  );
   const result = makePassword(charOptions);
   document.getElementById('passwordInput').value = result;
 }
